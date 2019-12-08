@@ -1,3 +1,4 @@
+
 let userNames = ["First", "Second", "Third"]
 let users = userNames.map( (user, index) => {
     return {
