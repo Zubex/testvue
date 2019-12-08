@@ -31,6 +31,12 @@ let vm = new Vue({
         usersCount : function () {
             return this.users.length;
         }
+    },
+    filters: {
+        toUpperCase: function (value) {
+            if (!value) return '';
+            return value.toString().toUpperCase();
+        }
     }
 
 });
