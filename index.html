@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href = "style.css" rel="stylesheet" type="text/css">
+    <script src = "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src = "app.js" defer></script>
+
+</head>
+<body>
+    <div data-app-root >
+        <h2>{{title}}</h2>
+        <table >
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Всего пользователей: {{ usersCount }}</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tr v-for="(value, name, index) in users" v-show="visible">
+                <td><img :src="`images/${value.userPic}`" alt=""></td>
+                <td>{{value.name}}</td>
+                <td>{{value.sirname}}</td>
+            </tr>
+
+        </table>
+        <button v-on:click="visible = !visible">{{ typeOfAction() }} список пользователей</button>
+
+    </div>
+</body>
+</html>

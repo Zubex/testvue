@@ -1,0 +1,18 @@
+h2{
+    color: cornflowerblue;
+}
+table>tr>td{
+    padding: 10px;
+}
+button{
+    padding: 10px;
+    border-radius: 4px;
+    background: cornflowerblue;
+    color: whitesmoke;
+    margin-top: 10px;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+}
+button:focus, button:hover{
+    border: 1px solid #2b3e61;
+}
